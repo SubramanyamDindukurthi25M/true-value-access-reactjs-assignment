@@ -1,0 +1,29 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.searchIcon {
+    position: relative;
+    margin-top: 2rem;
+
+    .icon {
+        cursor: pointer;
+        position: absolute;
+        right: 8px;
+        top: 6px;
+    }
+}

@@ -1,0 +1,37 @@
+In this page i written various commands to install external packages for ReactJS Application.
+
+1)To install Sass
+  npm install sass --save-dev
+  
+2)To install bootstrap V4
+  npm i bootstrap@4.3.1
+
+3)To install react-redux 
+  npm install react-redux
+
+4)To install redux-toolkit
+  npm install @reduxjs/toolkit
+
+To read state within the component we use useSelector hook.
+To dispatch an action to store we use useDispatch hook.
+
+5)To install axios
+  npm install axios
+
+6)To install sweetalert 
+  npm i sweetalert
+
+7)To install react-router-dom-v6
+  npm install react-router-dom@6
+
+8)To install React Icons
+  npm install react-icons --save
+
+9)To install lodash
+  npm i lodash
+
+I used ViteJS to build React Applications and to run project locally we need to use npm run dev command.
+
+a)To create table pagination
+  First display data in table format
+  Second use Bootstrap Pagination type add after closing table tag
