@@ -2,5 +2,5 @@
 import usersSlice from "./features/usersSlice"
 
 export const rootReducer = {
-    usersList : usersSlice
+    usersList: usersSlice
 }

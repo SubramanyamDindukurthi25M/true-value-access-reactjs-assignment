@@ -6,18 +6,18 @@ import _ from "lodash"
 
 export const DisplayUsersData = () => {
     const dataPerPage = 100;
-    const[currentPage,setCurrentPage] = useState(1);
-    
+    const [currentPage, setCurrentPage] = useState(1);
+
     // To read state within the component
     const getUsersData = useSelector((store) => {
-        const sPe = store.usersList.usersData; 
+        const sPe = store.usersList.usersData;
         return sPe;
     })
-    
-    // Logic for Pagination
-    const paginationButtonCount = getUsersData ? Math.ceil(getUsersData.length/dataPerPage) : 0;
 
-    const pageNumbers = _.range(1,paginationButtonCount + 1);
+    // Logic for Pagination
+    const paginationButtonCount = getUsersData ? Math.ceil(getUsersData.length / dataPerPage) : 0;
+
+    const pageNumbers = _.range(1, paginationButtonCount + 1);
 
     // Invoke useDispatch() hook
     const dispatch = useDispatch();
@@ -25,10 +25,10 @@ export const DisplayUsersData = () => {
     // To run API call
     useEffect(() => {
         dispatch(fetchUsersByUrl());
-    },[dispatch])
+    }, [dispatch])
 
     // if pagination === 1 display null
-    if(paginationButtonCount === 1) return null;
+    if (paginationButtonCount === 1) return null;
 
     return (
         <>
@@ -55,7 +55,14 @@ export const DisplayUsersData = () => {
                 <tbody>
                     {
                         getUsersData.map((ele) => {
-                            const {id,first_name,last_name,age,email,web} = ele;
+                            const {
+                                id,
+                                first_name,
+                                last_name,
+                                age,
+                                email,
+                                web
+                            } = ele;
                             return (
                                 <tr key={id}>
                                     <td>
