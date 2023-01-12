@@ -27,8 +27,8 @@ To dispatch an action to store we use useDispatch hook.
 8)To install React Icons
   npm install react-icons --save
 
-9)To install lodash
-  npm i lodash
+9)To remove any package
+  npm uninstall [packageName]
 
 I used ViteJS to build React Applications and to run project locally we need to use npm run dev command.
 

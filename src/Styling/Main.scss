@@ -27,3 +27,9 @@ input:focus {
         top: 6px;
     }
 }
+
+.page-link:focus {
+    z-index: 2;
+    outline: 0;
+    box-shadow: none;
+}

@@ -1,4 +1,3 @@
-import { DisplayUsersData } from "./Components/DisplayUsersData"
 import { SearchBox } from "./Components/SearchBox"
 
 export const App = () => {
@@ -8,7 +7,6 @@ export const App = () => {
                 users
             </h1>
             <SearchBox/>
-            <DisplayUsersData/>
         </section>
     )
 }
